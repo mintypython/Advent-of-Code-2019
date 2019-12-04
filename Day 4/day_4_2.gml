@@ -20,20 +20,13 @@ for(var i = minimum; i < maximum; i++){
 		
 		num = real(current_digit);
 		
-		if(j==2){
-			if(current_digit == string_char_at(str,j-1) && current_digit != string_char_at(str,j+1)){
-				adj = true;
-			}
+		var combo = 0;
+		while(current_digit == string_char_at(str,j+1)){
+			combo++;
+			j++;
 		}
-		else if(j==6){
-			if(current_digit == string_char_at(str,j-1) && current_digit != string_char_at(str,j-2)){
-				adj = true;
-			}
-		}
-		else if(j>2){
-			if(current_digit == string_char_at(str,j-1) && current_digit != string_char_at(str,j-2) && current_digit != string_char_at(str,j+1)){
-				adj = true;
-			}
+		if(combo==1){
+			adj = true;
 		}
 	}
 	

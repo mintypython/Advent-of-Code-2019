@@ -20,7 +20,8 @@ for(var i = minimum; i < maximum; i++){
 		
 		num = real(current_digit);
 		
-		if(j>1 && current_digit == string_char_at(str,j-1)){
+		if(current_digit == string_char_at(str,j+1)){
+			j++;
 			adj = true;
 		}
 	}
