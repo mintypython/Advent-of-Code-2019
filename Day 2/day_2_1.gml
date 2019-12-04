@@ -17,7 +17,5 @@ for(var i = 0; i < array_length_1d(arr); i += 4){
 			break;
 		case 99:
 			return arr;
-		default:
-			show_error("um",true);
 	}
 }
