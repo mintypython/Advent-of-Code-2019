@@ -1,5 +1,5 @@
 //get input
-var f = file_text_open_read("day_3.txt");
+var f = file_text_open_read("input.txt");
 var line1 = string_split(file_text_readln(f),",");
 var line2 = string_split(file_text_readln(f),",");
 file_text_close(f);

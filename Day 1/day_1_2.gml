@@ -1,5 +1,5 @@
 //get input
-var f = file_text_open_read("day_1.txt");
+var f = file_text_open_read("input.txt");
 
 var total = 0;
 while(!file_text_eof(f)){
