@@ -63,7 +63,6 @@ for(var i = 0; i < array_length_1d(line2); i++){
 }
 
 //find intersections
-var intersections = ds_list_create();
 var smallest = infinity;
 for(var i = 0; i < ds_list_size(line1_segments); i++){
 	for(var j = 0; j < ds_list_size(line2_segments); j++){
@@ -76,13 +75,8 @@ for(var i = 0; i < ds_list_size(line1_segments); i++){
 			if(abs(ix)+abs(iy)<smallest){
 				smallest = abs(ix)+abs(iy);
 			}
-			ds_list_add(intersections,[ix,iy]);
 		}
 	}
 }
 
-var inst = instance_create_depth(0,0,0,obj_draw_grid);
-inst.red = line1_segments;
-inst.green = line2_segments;
-inst.intersections = intersections;
 return smallest;
