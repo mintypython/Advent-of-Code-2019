@@ -1,5 +1,5 @@
 //get input
-var buff = buffer_load("day_5.txt");
+var buff = buffer_load("input.txt");
 var str = buffer_read(buff, buffer_text);
 buffer_delete(buff);
 
