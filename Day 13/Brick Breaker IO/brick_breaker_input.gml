@@ -1,0 +1,1 @@
+return sign(global.ball_x - global.paddle_x);
